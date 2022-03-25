@@ -31,6 +31,9 @@ app.get("/vendor", function (req, res,html) {
 app.get("/itinerary", function (req, res,html) {
   res.sendFile(process.cwd() + "/public/views/itinerary.html");
 });
+app.get("/mission", function (req, res,html) {
+  res.sendFile(process.cwd() + "/public/views/mission-statement.html");
+});
 
 
 app.post("/send", (req, res) => {
